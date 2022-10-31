@@ -1,0 +1,180 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%); 
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--red);
+    background-image: url(images/bg-intro-desktop.png);
+    font-family: 'Poppins', sans-serif;
+    overflow: ;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+    min-height: 100vh;
+}
+
+.container > div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 55px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+p {
+    color: #fff;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.box input:invalid {
+    border: 1px solid var(--red);
+}
+
+.box-blue {
+    background-color: var(--blue);
+    padding: 20px;
+}
+
+.box-blue p {
+    color: #fff;
+    margin: 0;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-control small {
+    color: var(--red);
+    font-weight: 600 ;
+    position: absolute;
+    bottom: -24px;
+    right: 0;
+    text-align: right;
+    opacity: 0;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid var(--grayish-blue);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+}
+
+input:focus {
+    border: 1px solid var(--dark-blue);
+    outline: none;
+}
+
+button {
+    background-color: var(--green);
+    border-radius: 5px;
+    border: 1px solid hsl(155, 66%, 33%);
+    box-shadow: 0 2px hsl(155, 66%, 33%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    display: block;
+    width: 100%;
+}
+
+button:focus {
+    outline:none;
+}
+
+button:active {
+    box-shadow: 0px;
+    transform: translateY(2px);
+}
+
+small {
+    display: block;
+    color: #bbb;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+small a {
+    color: var(--red);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center;
+    margin-top: 4rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+
+
